@@ -1,3 +1,7 @@
+.button {
+  background-color: #000103;
+  color: #F8F8FF;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,7 +130,72 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #F8F8FF;
+}
 header {
   max-width: 100%;
+  padding: 10px;
   background-color: #8FCB9B;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: auto;
+  height: 100%;
+}
+header nav {
+  align-content: center;
+  align-self: center;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header nav .nav-main {
+  padding: 5px;
+  border-right: solid 2px;
+}
+header nav .login-button {
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: #000103;
+  color: #F8F8FF;
+}
+.container {
+  background-color: #5B9279;
+}
+.container .main-content {
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  border: solid 2px;
+  justify-content: center;
+}
+.container .main-content img {
+  max-width: auto;
+  width: 50%;
+}
+.container .main-content .main-text {
+  width: 50%;
+  font-size: 3.2rem;
+  margin: 10px;
+  padding: 50px;
+  text-align: center;
+}
+.container .main-content .main-text p {
+  margin: 10px;
+  padding: 25px;
+}
+.container .main-content .main-text a {
+  border: solid 5px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 25px;
+  background-color: #000103;
+  color: #F8F8FF;
 }
