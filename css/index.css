@@ -1,6 +1,9 @@
 .button {
-  background-color: #000103;
+  background-color: #7A918D;
   color: #F8F8FF;
+}
+.shadow {
+  box-shadow: 0px 5px 10px grey;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -136,16 +139,46 @@ html {
 body {
   background-color: #F8F8FF;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Josefin Slab', serif;
+}
+nav {
+  font-size: 2.4rem;
+}
+@media ( max-width: 500px) {
+  nav {
+    font-size: 1.8rem;
+  }
+}
 header {
   max-width: 100%;
   padding: 10px;
   background-color: #8FCB9B;
+  box-shadow: 0px 5px 10px grey;
   display: flex;
   justify-content: space-between;
 }
-header img {
-  width: auto;
-  height: 100%;
+@media ( max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .nav-head {
+  font-family: 'Vibur', cursive;
+  font-size: 4.8rem;
+  color: #F8F8FF;
+}
+@media ( max-width: 500px) {
+  header .nav-head {
+    font-size: 3.6rem;
+  }
 }
 header nav {
   align-content: center;
@@ -159,43 +192,75 @@ header nav .nav-main {
   padding: 5px;
   border-right: solid 2px;
 }
+@media ( max-width: 500px) {
+  header nav .nav-main {
+    border-right: 0px;
+  }
+}
 header nav .login-button {
   padding: 5px;
   border: solid 2px;
   border-radius: 10px;
-  background-color: #000103;
+  background-color: #7A918D;
   color: #F8F8FF;
 }
-.container {
+.container .content-container {
   background-color: #5B9279;
+  padding: 5px;
+  margin: 1% 1%;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px grey;
 }
-.container .main-content {
-  height: 100vh;
-  padding: 100px;
+.container .content-container .main-content {
+  background-color: #8FCB9B;
+  padding: 50px;
+  margin: 5% auto;
   display: flex;
-  border: solid 2px;
+  border-radius: 25px;
   justify-content: center;
 }
-.container .main-content img {
+@media ( max-width: 500px) {
+  .container .content-container .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+}
+.container .content-container .main-content img {
   max-width: auto;
   width: 50%;
+  height: 70%;
+  border-radius: 25px;
 }
-.container .main-content .main-text {
+@media ( max-width: 500px) {
+  .container .content-container .main-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+.container .content-container .main-content .main-text {
   width: 50%;
   font-size: 3.2rem;
   margin: 10px;
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
-.container .main-content .main-text p {
+@media ( max-width: 500px) {
+  .container .content-container .main-content .main-text {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+.container .content-container .main-content .main-text p {
   margin: 10px;
   padding: 25px;
 }
-.container .main-content .main-text a {
+.container .content-container .main-content .main-text a {
   border: solid 5px;
   border-radius: 10px;
   margin: 10px;
   padding: 25px;
-  background-color: #000103;
+  background-color: #7A918D;
   color: #F8F8FF;
 }
