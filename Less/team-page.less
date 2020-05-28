@@ -5,11 +5,31 @@ h1{
 .team-content{
     display: flex;
     justify-content: space-evenly;
+    padding: 150px;
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
     .team-member{
         background-color: @rich-black;
         color: @ghost-white;
-        padding: 30px;
+        padding: 20px;
         border-radius: 25px;
+        margin: auto 10px;
+        @media @mobile{
+            margin: 2px 10px;
+        }
+        .team-pics{
+            max-width: 400px;
+            display: block;
+            margin: auto auto;
+            @media @mobile{
+                max-width: 80%;
+                display: block;
+                margin: auto auto;
+            }
+        }
     }
     h2{
         font-size: 4.8rem;
