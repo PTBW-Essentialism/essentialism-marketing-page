@@ -20,6 +20,11 @@ header{
     nav{
         align-content: center;
         align-self: center;
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         a{
             text-decoration: none;
             color: black;
@@ -35,7 +40,13 @@ header{
             padding: 5px;
             border: solid 2px;
             border-radius: 10px;
-            .button()
+            .button();
         }
     }
+}
+a:hover{
+    .hover-color();
+}
+.login-button:hover{
+    .hover-color();
 }
