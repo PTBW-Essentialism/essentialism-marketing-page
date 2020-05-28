@@ -291,3 +291,13 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+.team-content .team-member {
+  background-color: #000103;
+  color: #F8F8FF;
+  padding: 30px;
+  border-radius: 25px;
+}
+.team-content h2 {
+  font-size: 4.8rem;
+  text-align: center;
+}
