@@ -290,12 +290,38 @@ h1 {
 .team-content {
   display: flex;
   justify-content: space-evenly;
+  padding: 150px;
+}
+@media ( max-width: 500px) {
+  .team-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 .team-content .team-member {
   background-color: #000103;
   color: #F8F8FF;
-  padding: 30px;
+  padding: 20px;
   border-radius: 25px;
+  margin: auto 10px;
+}
+@media ( max-width: 500px) {
+  .team-content .team-member {
+    margin: 2px 10px;
+  }
+}
+.team-content .team-member .team-pics {
+  max-width: 400px;
+  display: block;
+  margin: auto auto;
+}
+@media ( max-width: 500px) {
+  .team-content .team-member .team-pics {
+    max-width: 80%;
+    display: block;
+    margin: auto auto;
+  }
 }
 .team-content h2 {
   font-size: 4.8rem;
