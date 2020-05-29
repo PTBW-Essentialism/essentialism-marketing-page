@@ -302,9 +302,10 @@ h1 {
 .team-content .team-member {
   background-color: #000103;
   color: #F8F8FF;
-  padding: 20px;
+  padding: 1vw;
   border-radius: 25px;
-  margin: auto 10px;
+  margin: auto 5px;
+  border: solid 2px;
 }
 @media ( max-width: 500px) {
   .team-content .team-member {
@@ -312,7 +313,8 @@ h1 {
   }
 }
 .team-content .team-member .team-pics {
-  max-width: 325px;
+  max-width: 16vw;
+  border-radius: 25px;
   display: block;
   margin: auto auto;
 }
@@ -326,4 +328,9 @@ h1 {
 .team-content h2 {
   font-size: 4.8rem;
   text-align: center;
+}
+@media ( max-width: 500px) {
+  .team-content h2 {
+    font-size: 3.2rem;
+  }
 }
